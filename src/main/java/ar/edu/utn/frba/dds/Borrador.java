@@ -6,6 +6,7 @@ public class Borrador {
   Colores colorPrincipal;
   Colores colorSecundario;
   Trama trama = Trama.LISA;
+  Formalidad formalidad;
 
   public Borrador(TipoDePrenda tipo) {
     if (tipo == null) {
@@ -41,10 +42,16 @@ public class Borrador {
     }
     this.trama = trama;
   }
+  public void setFormalidad(Formalidad formalidad) {
+    if (formalidad == null) {
+      throw new NullPointerException("Trama nula");
+    }
+    this.formalidad = formalidad;
+  }
 
 
   public Prenda BuildPrenda (){
-    return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama);
+    return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama, formalidad);
   }
 
 

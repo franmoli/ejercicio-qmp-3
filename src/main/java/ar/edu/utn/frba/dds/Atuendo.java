@@ -1,14 +1,11 @@
 package ar.edu.utn.frba.dds;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Uniforme {
+public class Atuendo {
   public Prenda superior;
   public Prenda inferior;
   public Prenda calzado;
 
-  public Uniforme(Prenda superior, Prenda inferior, Prenda calzado) {
+  public Atuendo(Prenda superior, Prenda inferior, Prenda calzado) {
     if (superior == null || inferior == null || calzado == null) {
       throw new NullPointerException("No se puede crear con prendas nulas");
     }
