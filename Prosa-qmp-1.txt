@@ -1,0 +1,4 @@
+ITERACION 1
+Para esta iteracion pide que un atuendo sea un conjunto de prendas. Como no especifica el enunciado de que manera se va a crear un atuendo
+ entonces en la simplemente tiene una lista de elementos de la clase Prenda y un metodo para mostrar todas las cargadas. Luego la clase prenda, tiene un material del enum de materiales. Para los colores, uno primario y uno secundario del enum de colores, en caso de que sea un color no especificado existe en el enum el color NO_ESPECIFICADO, y en caso de que se quiera cargar el color no especificado como color principal, el metodo cargarColorPrincipal va a tirar una exepcion. Para los tipos de prenda, tiene un enum de TipoDePrenda, en el cual cada elemento tiene su correspondiente categoria del enum categoria, de esta manera se asegura que no puede existir una remera de categoria calzado pues esta precargado en el enum que el metodo TipoDePrenda.REMERA.CategoriaPrenda devuelve PARTE_SUPERIOR.
+

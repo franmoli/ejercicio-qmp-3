@@ -1,0 +1,12 @@
+ITERACION 2
+Para esta iteración un requerimiento era poder especificar la trama y que por defecto sea lisa,
+lo resolví creando un enum de trama que este dentro de la clase prenda, y el valor sea lisa.
+
+
+Luego para el siguiente requerimiento de guardar prendas, y tener una prenda cargada como borrador creo
+la clase borrador, esta se crea definiendo un tipo de prenda, y luego se va completando a traves de setters.
+La clase prenda se crea obligatoriamente con todos sus elementos completos.
+
+En cuanto a los requerimientos bonus. Creo la clase uniforme, donde el constructor pide una prenda superior, una inferior
+y un calzado. Se valida que no sean nulos y que sean del tipo adecuado. Luego creo la clase Institución,
+la cual tiene un nombre y su uniforme.
