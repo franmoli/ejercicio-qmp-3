@@ -5,7 +5,7 @@ public class Usuario {
   String nombre;
 
   public Usuario(Integer edad, String nombre) {
-    if(edad == null || nombre == null){
+    if (edad == null || nombre == null) {
       throw new IllegalArgumentException("Datos inválidos");
     }
     this.edad = edad;

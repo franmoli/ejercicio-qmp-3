@@ -4,8 +4,8 @@ public class ProveedorDeMotor {
   MotorSugerencias motorSugerencias;
   static ProveedorDeMotor INSTANCE = new ProveedorDeMotor();
 
-  static ProveedorDeMotor getInstance(){
-    return  INSTANCE;
+  static ProveedorDeMotor getInstance() {
+    return INSTANCE;
   }
 
   public MotorSugerencias getMotor() {

@@ -1,7 +1,6 @@
 package ar.edu.utn.frba.dds;
 
 import com.google.common.collect.Sets;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -11,15 +10,18 @@ public class MotorSugerenciasSegunFormalidad implements MotorSugerencias {
 
   public List<Atuendo> generarSugerencias(List<Prenda> prendas, Usuario usuario) {
 
-    List<Prenda> prendasValidas = usuario.edad > 55 ?
-        prendas.stream().filter(p -> p.formalidad != Formalidad.INFORMAL).toList() : prendas;
+    List<Prenda> prendasValidas = usuario.edad > 55
+        ? prendas.stream().filter(p -> p.formalidad != Formalidad.INFORMAL).toList() : prendas;
 
     List<Prenda> prendasSuperiores =
-        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR).toList();
+        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR)
+            .toList();
     List<Prenda> prendasInferiores =
-        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR).toList();
+        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR)
+            .toList();
     List<Prenda> prendasCalzado =
-        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR).toList();
+        prendasValidas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR)
+            .toList();
 
     Set<Prenda> setSuperiores = new HashSet<>(prendasSuperiores);
     Set<Prenda> setInferiores = new HashSet<>(prendasInferiores);

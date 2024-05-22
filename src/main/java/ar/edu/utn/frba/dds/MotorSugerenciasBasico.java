@@ -1,14 +1,13 @@
 package ar.edu.utn.frba.dds;
 
 import com.google.common.collect.Sets;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MotorSugerenciasBasico implements MotorSugerencias{
+public class MotorSugerenciasBasico implements MotorSugerencias {
 
-  public List<Atuendo> generarSugerencias(List<Prenda> prendas, Usuario usuario){
+  public List<Atuendo> generarSugerencias(List<Prenda> prendas, Usuario usuario) {
 
     List<Prenda> prendasSuperiores =
         prendas.stream().filter(p -> p.tipo.getTipo() == CategoriaPrenda.PARTE_SUPERIOR).toList();

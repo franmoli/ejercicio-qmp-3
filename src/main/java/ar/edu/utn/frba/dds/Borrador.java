@@ -42,6 +42,7 @@ public class Borrador {
     }
     this.trama = trama;
   }
+
   public void setFormalidad(Formalidad formalidad) {
     if (formalidad == null) {
       throw new NullPointerException("Trama nula");
@@ -50,7 +51,7 @@ public class Borrador {
   }
 
 
-  public Prenda BuildPrenda (){
+  public Prenda buildPrenda() {
     return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama, formalidad);
   }
 
